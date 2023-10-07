@@ -3,6 +3,10 @@
     margin: 0 auto;
 }
 
+#hero-box img{
+    width: 100%;
+}
+
 nav a {
     text-align: center;
     text-decoration: none;
