@@ -1,16 +1,12 @@
 #content{
     max-width: 1600px;
     margin: 0 auto;
-    
+
 }
 
 nav a {
     text-align: center;
     text-decoration: none;
-}
-
-hero-box{
-    max-width: 1600px;
 }
 
 #hero-msg h1, #hero-msg h4 {
