@@ -226,7 +226,7 @@ main section img {
     transform: scale(1.1);
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 800px) {
     #hero, .home-grid {
         display: block;
         height: auto;
