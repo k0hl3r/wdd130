@@ -329,12 +329,12 @@ main.home-grid, main.rivers-grid {
         width: 60%;
     }
 
-    .rivers-card{
+    .rivers-card, .guided-card{
         grid-row: 2/4;
         grid-column: 3/9;
     }
 
-    .camping-card{
+    .camping-card, .solo-card{
         grid-column: 3/9;
         grid-row: 4/6;
     }
