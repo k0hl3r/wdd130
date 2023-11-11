@@ -34,6 +34,7 @@ nav {
     text-align: center;
     font-family: 'Black Ops One';
     padding: 35px;
+    color: #6f7364;
 }
 
 #opener{
@@ -319,7 +320,7 @@ main.home-grid, main.rivers-grid {
         display: none;
     }
 
-    .home-title {
+    .home-title, #title {
         font-size: 25px;
         color: #6f7364;
     }
