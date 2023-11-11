@@ -26,6 +26,27 @@ nav {
     text-align: center;
 }
 
+#opener h1, #opener h4 {
+    text-align: center;
+}
+
+#title {
+    text-align: center;
+    font-family: 'Black Ops One';
+    padding: 35px;
+}
+
+#opener{
+    background-color: #B3D1E2;
+    font-family: Raleway, Helvetica, sans-serif;
+    grid-column: 4/8;
+    grid-row: 6/7;
+    box-shadow: 5px 5px 10px #294169;
+    margin: 50px ;
+    padding: 35px;
+    text-align: center;
+}
+
 #hero-msg h4 {
     color: white;
 }
@@ -65,7 +86,7 @@ nav a:hover{
     background-color: #B3D1E2;
 }
 
-.join:hover{
+.join:hover, .join_us:hover{
     background-color: #FFFB9F;
 }
 
@@ -81,6 +102,16 @@ nav a:hover{
     padding: 35px;
     grid-column: 6/10;
     grid-row: 6/7;
+    box-shadow: 5px 5px 10px #294169;
+}
+
+.msg2{
+    background-color: #B3D1E2;
+    font-family: Raleway, Helvetica, sans-serif;
+    padding: 35px;
+    grid-column: 4/8;
+    grid-row: 6/7;
+    text-align: center;
     box-shadow: 5px 5px 10px #294169;
 }
 
@@ -106,6 +137,10 @@ footer{
     color: white;
 }
 
+.join_us {
+    text-decoration: none;
+}
+
 footer p {
     font-size: 1.2em;
     color: white;
@@ -121,7 +156,7 @@ footer p a:hover {
     margin-top: 10px;
 }
 
-.book, .join {
+.book, .join, .join_us {
     font-family: Raleway, Helvetica, sans-serif;
     font-size: 18px;
     padding: 15px 30px;
@@ -160,10 +195,22 @@ footer .social img {
     margin: 200px 0;
 }
 
+.guided-card, .solo-card {
+    margin: 100px 0;
+}
+
 .card-img {
     border: 10px solid black;
     transition: transform .5s;
     box-shadow: 5px 5px 10px #6f7364;
+}
+
+.card-img2 {
+    border: 10px solid black;
+    transition: transform .5s;
+    box-shadow: 5px 5px 10px #6f7364; 
+    width: 100%
+
 }
 
 main section img {
@@ -205,7 +252,7 @@ main section img {
     color: white;
 }
 
-main.home-grid {
+main.home-grid, main.rivers-grid {
     display: grid;
     grid-template-columns: repeat(10, 1fr);
 }
@@ -230,6 +277,20 @@ main.home-grid {
     transform: scale(1.1);
 }
 
+.card-img2:hover {
+    opacity: .6;
+    transform: scale(1.1);
+}
+
+.guided-card {
+    grid-column: 2/5;
+    grid-row: 2/4;
+}
+
+.solo-card {
+    grid-column: 7/10;
+    grid-row: 2/4;
+}
 
 @media screen and (max-width: 900px) {
     #hero, .home-grid {
