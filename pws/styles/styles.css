@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css?family=Oswald&family=Roboto-slab');
+
+#content{
+    max-width: 1600px;
+    margin: 0 auto;
+}
+
+header {
+    max-width: 100%;
+}
+
+
+.logo{
+    width: 120px;
+    height: 120px;
+}
+
+nav a{
+    text-decoration: none;
+    margin: auto;
+    font-family: "Oswald";
+    font-size: larger;
+
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color:#F7CF1F ;
+}
+
+.right-links a {
+    margin: 50px;
+    padding: 20px;
+  }
+
+#logo_link {
+    padding: 20px;
+    justify-self: center;
+    align-self: center;
+}
+
+nav a:hover{
+    background-color:#E11414;
+    color: white;
+}
+
+.left-links a {
+    margin: 200px;
+    padding: 20px;
+}
+
+#hero img{
+    width: 100%;
+}
+
+main.home-grid {
+    display: grid;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+#welcome-msg h1, #welcome-msg h4 {
+    text-align: center;
+    margin-left: 10%;
+    margin-right: 10%;
+    padding: 20px;
+}
+
+#welcome-msg h1 {
+    font-family: "Oswald";
+    font-size: xx-large;
+    text-decoration: underline;
+}
+
+#welcome-msg h4 {
+    font-family: "Roboto-slab";
+    font-size: larger;
+}
+
+.Traditional-card, .Digital-card {
+    grid-row: 2/4;
+    margin: 10px 0;
+}
+
+.card-img {
+    border: 10px solid black;
+    transition: transform .5s;
+    box-shadow: 5px 5px 10px #6f7364;
+}
+
+.Traditional-card {
+    grid-column: 2/4;
+
+}
+
+.Traditional-card:hover, .Digital-card:hover {
+    opacity: .6;
+    transform: scale(1.1);
+}
+
+.Digital-card {
+    grid-column: 5/7;
+}
+
+.Traditional-card h2, .Digital-card h2 {
+    text-align: center;
+    font-family: "Oswald";
+    font-size: xx-large;
+} 
+
+.commissions {
+    grid-row: 6/7;
+    grid-column-start: span 3;
+    grid-column-end: 6;
+    text-align: center;
+    background-color: #E11414;
+    color: white;
+    padding: 40px;
+    margin-left: 150px;
+    margin-right: 150px;
+    margin-top: 50px;
+    box-shadow: 5px 5px 10px #6f7364;
+}
+
+.commissions h2{
+    font-family: "Oswald";
+    font-size: xx-large;
+}
+
+.commissions p {
+    font-family: "Roboto-slab";
+    font-size: x-large;
+}
+
+footer{
+    background-color: #F7CF1F;
+    padding: 25px 50px;
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+footer a, footer p {
+    text-decoration: none;
+    font-family: "Oswald";
+    color: black;
+}
+
+
+
+
+
