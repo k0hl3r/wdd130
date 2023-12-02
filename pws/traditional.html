@@ -3,75 +3,65 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/styles.css">
     <title>Rebel Arts</title>
 </head>
 <body>
     <div id="content">
         <header>
-            <a id="logo_link" href="index.html">
-             <img class="logo" src="images/Rebel-Arts-logos.jpeg" alt="Rebel-Arts-Logo" width="200" height="200">
-            </a>
             <nav>
-                <a href="home.html">Home</a>
-                <a href="traditional.html">Traditional Drawings</a>
-                <a href="digital.html">Digital Drawings</a>
+                <div class="left-links">
+                    <a href="home.html">Home</a>
+                </div>
+                <a id="logo_link" href="home.html">
+                <img class="logo" src="images/Rebel-Arts-logos.jpeg" alt="Rebel-Arts-Logo">
+                </a>
+                <div class="right-links">
+                    <a href="traditional.html">Traditional Drawings</a>
+                    <a href="digital.html">Digital Drawings</a>
+                </div>
             </nav>  
         </header>
-        <main class="home_grid">
-            <section id="traditional-msg">
-                <h1 class="traditional">TRADITIONAL DRAWINGS</h1>
-                <h4>This is the Traditional Drawing page. On this page you will see what the artist can do off the computer, thats right only ink, pencil, and paper here. Half the drawings as you might notice are quick sketches, showing the artist ability to create a concept in under ten minutes. The other half of the drawings go a step further with ink making the once rough sketches clean and pleasing to the eye.</h4>
-            </section>
-            <section class="Traditional-1">
-                    <img class="card-img" src="images/Killer-Queen.JPG" alt="Killer-Queen" width="230" height="270">
-                    </a>
-                    <h2>Killer Queen</h2>
-            </section>
-            <section class="Traditional-2">
-                    <img class="card-img" src="images/IMG-5152.jpg" alt="Feeling Crabby" width="250" height="230">
-                    </a>
-                    <h2>Feeling Crabby</h2>
-            </section>
-            <section class="Traditional-3">
-                <img class="card-img" src="images/IMG-5529.jpg" alt="Here We Stand" width="270" height="230">
-                </a>
-                <h2>Here We Stand</h2>
-            </section>
-            <section class="Traditional-4">
-                <img class="card-img" src="images/June Heads.jpg" alt="Robotic Expressions" width="320" height="230">
-                </a>
-                <h2>Robotic Expressions</h2>
-            </section>
-            <section class="Traditional-5">
-                <img class="card-img" src="images/Dean and Axle Heads.jpg" alt="Anime Boys" width="320" height="230">
-                </a>
-                <h2>Anime Boys</h2>
-            </section>
-            <section class="Traditional-6">
-                <img class="card-img" src="images/Snow Fall.jpg" alt="Let It Snow" width="230" height="290">
-                </a>
-                <h2>Let It Snow</h2>
-            </section>
-            <section class="Traditional-7">
-                <img class="card-img" src="images/Mother.jpg" alt="What is This" width="250" height="210">
-                </a>
-                <h2>What is This</h2>
-            </section>
-            <section class="Traditional-8">
-                <img class="card-img" src="images/Dean.jpg" alt="Supernatural Inking" width="230" height="300">
-                </a>
-                <h2>Supernatural Inking</h2>
-            </section>
-            <section class="Traditional-9">
-                <img class="card-img" src="images/Bug.jpg" alt="Route 66" width="250" height="210">
-                </a>
-                <h2>Route 66</h2>
-            </section>
-            <section class="Traditional-10">
-                <img class="card-img" src="images/Weapon Design.jpg" alt="Weapon Design" width="230" height="290">
-                </a>
-                <h2>Weapon Design</h2>
-            </section>
+        <div id="traditional-msg">
+            <h1 class="traditional">TRADITIONAL DRAWINGS</h1>
+            <h4>This is the Traditional Drawing page. On this page you will see what the artist can do off the computer, thats right only ink, pencil, and paper here. Half the drawings as you might notice are quick sketches, showing the artist ability to create a concept in under ten minutes. The other half of the drawings go a step further with ink making the once rough sketches clean and pleasing to the eye.</h4>
+        </div>
+        <div class="container">
+            <span onclick="this.parentElement.style.display='none'" style="width:61%" class="closebtn">&times;</span>
+            <img id="expandedImg" src="images/Rebel-Arts-logos.jpeg" style="width:40%" alt="Expanded Image">
+            <div id="imgtext"></div>
+        </div>
+        <main class="row">
+            <div class="column">
+                <img src="images/IMG-5529.jpg" alt="Here We Stand" style="width: 100%" onclick="myFunction(this);">
+            </div>
+            <div class="column">
+                <img src="images/June-Heads.jpg" alt="Robotic Expressions" style="width: 100%" onclick="myFunction(this);">
+            </div>
+            <div class="column">
+                <img src="images/Dean-and-Axle-Heads.jpg" alt="Anime Boys" style="width: 100%" onclick="myFunction(this);">
+            </div>
+            <div class="column">
+                <img src="images/Bug.jpg" alt="Route 66" style="width: 100%" onclick="myFunction(this);">
+            </div>
+            <div class="column">
+                <img src="images/Mother.jpg" alt="What is This" style="width: 100%" onclick="myFunction(this);">
+            </div>
+            <div class="column">
+                <img src="images/IMG-5152.jpg" alt="Feeling Crabby" style="width: 100%" onclick="myFunction(this);">
+            </div>
+            <div class="column">
+                <img src="images/Killer-Queen.JPG" alt="Killer Queen" style="width: 100%" onclick="myFunction(this);">
+            </div>
+            <div class="column">
+                <img src="images/Snow-Fall.jpg" alt="Let It Snow" style="width: 100%" onclick="myFunction(this);">
+            </div>
+            <div class="column">
+                <img src="images/Dean.jpg" alt="Supernatural Inking" style="width: 100%" onclick="myFunction(this);">
+            </div>
+            <div class="column">
+                <img src="images/Weapon-Design.jpg" alt="Weapon Design" style="width: 100%" onclick="myFunction(this);">
+            </div>
         </main>
         <footer>
             <p>Rebel Arts &copy; 2023 Kohler Pratt</p>
@@ -83,5 +73,15 @@
                 </a>
             </div>
         </footer>
+        <script>
+            function myFunction(imgs) {
+              var expandImg = document.getElementById("expandedImg");
+              var imgText = document.getElementById("imgtext");
+              expandImg.src = imgs.src;
+              imgText.innerHTML = imgs.alt;
+              expandImg.parentElement.style.display = "block";
+            }
+        </script>
+    </div>
 </body>
 </html>
