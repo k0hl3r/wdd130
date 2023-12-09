@@ -3,75 +3,65 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/styles.css">
     <title>Rebel Arts</title>
 </head>
 <body>
     <div id="content">
         <header>
-            <a id="logo_link" href="index.html">
-             <img class="logo" src="images/Rebel-Arts-logos.jpeg" alt="Rebel-Arts-Logo" width="200" height="200">
-            </a>
             <nav>
-                <a href="home.html">Home</a>
-                <a href="traditional.html">Traditional Drawings</a>
-                <a href="digital.html">Digital Drawings</a>
+                <div class="left-links">
+                    <a href="home.html">Home</a>
+                </div>
+                <a id="logo_link" href="home.html">
+                <img class="logo" src="images/Rebel-Arts-logos.jpeg" alt="Rebel-Arts-Logo">
+                </a>
+                <div class="right-links">
+                    <a href="traditional.html">Traditional Drawings</a>
+                    <a href="digital.html">Digital Drawings</a>
+                </div>
             </nav>  
         </header>
-        <main class="home_grid">
-            <section id="digital-msg">
-                <h1 class="digital">DIGITAL DRAWINGS</h1>
-                <h4>This is the Digital Drawing page. The future is now, the artist may be more comfortable with his treditional art but he is no stranger to his more digital side. The programs the artist is familiar with are those in the Adobe Creative Suite such as Photoshop and Illustrator, the artist can also adapt to different programs if needs be. The Drawings on this page will consist half of the artist linework and the other half will add a splash of color. The artist linework will show his capability to create clean lines with nothing but a screen and digital pen and once he adds color the art will stand out 10 times better. </h4>
-            </section>
-            <section class="Digital-1">
-                    <img class="card-img" src="images/Jazz-Wakes-Up.jpg" alt="Aftermath" width="230" height="230">
-                    </a>
-                    <h2>Aftermath</h2>
-            </section>
-            <section class="Digital-2">
-                    <img class="card-img" src="images/(Don't Fear) The Reaper-Recovered.jpg" alt="(Don't Fear) The Reaper"  width="230" height="320">
-                    </a>
-                    <h2>(Don't Fear) The Reaper</h2>
-            </section>
-            <section class="Digital-3">
-                <img class="card-img" src="images/Supremacy Original No Halftones.jpg" alt="Supremacy" width="230" height="320">
-                </a>
-                <h2>Supremacy</h2>
-            </section>
-            <section class="Digital-4">
-                <img class="card-img" src="images/Jazz and Cali 2023.jpg" alt="Revolution Radio" width="230" height="320">
-                </a>
-                <h2>Revelution Radio</h2>
-            </section>
-            <section class="Digital-5">
-                <img class="card-img" src="images/June School Uniform.jpg" alt="Advanced Printing" width="230" height="320">
-                </a>
-                <h2>Advanced Printing</h2>
-            </section>
-            <section class="Digital-6">
-                <img class="card-img" src="images/Jazz and Cali Updated.jpg" alt="Pretenders" width="230" height="320">
-                </a>
-                <h2>Pretenders</h2>
-            </section>
-            <section class="Digital-7">
-                <img class="card-img" src="images/Halloween 2022 2.jpg" alt="This is Halloween" width="320" height="230">
-                </a>
-                <h2>This is Halloween</h2>
-            </section>
-            <section class="Digital-8">
-                <img class="card-img" src="images/June Meets June.jpg" alt="iRobot" width="230" height="320">
-                </a>
-                <h2>iRobot</h2>
-            </section>
-            <section class="Digital-9">
-                <img class="card-img" src="images/Sonic the Hedgehog.jpg" alt="Go Go Go" width="230" height="230">
-                </a>
-                <h2>Go Go Go</h2>
-            </section>
-            <section class="Digital-10">
-                <img class="card-img" src="images/Tess and Axle Intimidating.jpg" alt="The Masters Call" width="230" height="320">
-                </a>
-                <h2>The Masters Call</h2>
-            </section>
+        <div id="digital-msg">
+            <h1 class="digital">DIGITAL DRAWINGS</h1>
+            <h4>This is the Digital Drawing page. The future is now, the artist may be more comfortable with his treditional art but he is no stranger to his more digital side. The programs the artist is familiar with are those in the Adobe Creative Suite such as Photoshop and Illustrator, the artist can also adapt to different programs if needs be. The Drawings on this page will consist half of the artist linework and the other half will add a splash of color. The artist linework will show his capability to create clean lines with nothing but a screen and digital pen and once he adds color the art will stand out 10 times better. </h4>
+        </div>
+        <div class="container">
+            <span onclick="this.parentElement.style.display='none'" style="width:61%" class="closebtn">&times;</span>
+            <img id="expandedImg" src="images/Rebel-Arts-logos.jpeg" style="width:40%" alt="Expanded Image">
+            <div id="imgtext"></div>
+        </div>
+        <main class="row">
+            <div class="column">
+                <img src="images/Jazz-Wakes-Up.jpg" alt="Aftermath" style="width: 100%" onclick="myFunction(this);">
+            </div>
+            <div class="column">
+                <img src="images/Don't-Fear-The-Reaper-Recovered.jpg" alt="(Don't Fear)" style="width: 100%" onclick="myFunction(this);">
+            </div>
+            <div class="column">
+                <img src="images/Supremacy-Original-No-Halftones.jpg" alt="Supremacy" style="width: 100%" onclick="myFunction(this);">
+            </div>
+            <div class="column">
+                <img src="images/Jazz-and-Cali-2023.jpg" alt="Revolution Radio" style="width: 100%" onclick="myFunction(this);">
+            </div>
+            <div class="column">
+                <img src="images/June-School-Uniform.jpg" alt="Creating" style="width: 100%" onclick="myFunction(this);">
+            </div>
+            <div class="column">
+                <img src="images/Jazz-and-Cali-Updated.jpg" alt="The Pretenders" style="width: 100%" onclick="myFunction(this);">
+            </div>
+            <div class="column">
+                <img src="images/Halloween-2022-2.jpg" alt="This is Halloween" style="width: 100%" onclick="myFunction(this);">
+            </div>
+            <div class="column">
+                <img src="images/June-Meets-June.jpg" alt="iRobot" style="width: 100%" onclick="myFunction(this);">
+            </div>
+            <div class="column">
+                <img src="images/Sonic-the-Hedgehog.jpg" alt="GO GO GO" style="width: 100%" onclick="myFunction(this);">
+            </div>
+            <div class="column">
+                <img src="images/Tess-and-Axle-Intimidating.jpg" alt="The Master's Call" style="width: 100%" onclick="myFunction(this);">
+            </div>
         </main>
         <footer>
             <p>Rebel Arts &copy; 2023 Kohler Pratt</p>
@@ -83,5 +73,15 @@
                 </a>
             </div>
         </footer>
+        <script>
+            function myFunction(imgs) {
+              var expandImg = document.getElementById("expandedImg");
+              var imgText = document.getElementById("imgtext");
+              expandImg.src = imgs.src;
+              imgText.innerHTML = imgs.alt;
+              expandImg.parentElement.style.display = "block";
+            }
+        </script>
+    </div>
 </body>
 </html>

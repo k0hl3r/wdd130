@@ -61,20 +61,20 @@ main.home-grid {
     margin-right: 100px;
 }
 
-#welcome-msg h1, #welcome-msg h4, #traditional-msg h1, #traditional-msg h4 {
+#welcome-msg h1, #welcome-msg h4, #traditional-msg h1, #traditional-msg h4, #digital-msg {
     text-align: center;
     margin-left: 10%;
     margin-right: 10%;
     padding: 20px;
 }
 
-#welcome-msg h1, #traditional-msg h1{
+#welcome-msg h1, #traditional-msg h1, #digital-msg h1{
     font-family: "Oswald";
     font-size: xx-large;
     text-decoration: underline;
 }
 
-#welcome-msg h4, #traditional-msg h4 {
+#welcome-msg h4, #traditional-msg h4, #digital-msg h4 {
     font-family: "Roboto-slab";
     font-size: larger;
 }
